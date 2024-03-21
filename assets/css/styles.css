@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* CSS untuk layout */
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8751a;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  /* font: size 0; */
+}
+
+#app {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CSS untuk elemen kustom */
+.note {
+  background-color: #f9f871;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.note h2 {
+  margin-top: 0;
+  color: #3c3c3c;
+}
+
+.note p {
+  color: #555;
+}
+
+.edit-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.edit-buttons button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 5px;
+  color: #555;
+}
+
+.edit-buttons button:hover {
+  color: #333;
+}
+
+/* .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 25px; 
+
+} */
